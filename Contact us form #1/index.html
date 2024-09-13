@@ -9,17 +9,24 @@
     </style>
 </head>
 <body>
-    <form action="#server url">
+    <form action="#server url" method="post">
         <h1>Contact us Form</h1>
         <p>Please fill all the text in the field</p>
         <br>
+
         <p>Name: </p>
-        <input type="text" >
+        <input type="text" name="name" value="Enter your name">
+
         <p>Email: </p>
-        <input type="Enter your email here">
+        <input type="email" name="email" value="Enter your email">
+
         <p>Message: </p>
-        <textarea name="Message" id="Message" cols="100" rows="10">Enter your message to us</textarea>
-        <br>
+        <textarea name="Message" cols="100" rows="10">Enter your message to us</textarea>
+
+        <p>Subject: </p>
+        <input type="text" name="Subject" value="Enter your subject">
+        <br><br>
+
         <input type="submit" value="Send">
 
     </form>
