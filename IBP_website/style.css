@@ -67,7 +67,6 @@ p {
     padding: 0 15px; 
 }
 
-<<<<<<< HEAD
 .collage-container {
     display: flex;
     flex-wrap: wrap;
@@ -81,13 +80,6 @@ p {
     margin: 1%;  
     height: 200px;
     object-fit: cover;
-=======
-img {
-    display: block; 
-    margin: 20px auto; 
-    max-width: 100%; 
-    height: auto; 
->>>>>>> 1d527c35270e1868e0056e6065164897e32957c2
 }
 #link, #email{
     color: rgb(11, 66, 149);
@@ -95,7 +87,6 @@ img {
 #link:hover, #email:hover{
     color: rgb(149, 11, 11);
     background-color: white;
-<<<<<<< HEAD
 }
 #tanyaphoto{
     float: left;
@@ -114,6 +105,3 @@ img {
 #brahambhatt.p.clear{
     clear: left;
 }
-=======
-}
->>>>>>> 1d527c35270e1868e0056e6065164897e32957c2
