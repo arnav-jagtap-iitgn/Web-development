@@ -5,21 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsiveness with media queries</title>
     <style>
+
         #box1{
-            border: solid 2px;
+            font-size: 40px;
+            border: none 0px;
+            box-sizing: border-box;
+            width: 24.5%;
+            height: auto;
+            padding: 10px;
+            display: inline-block;
+            background-color: gray;
         }
         #box2{
-            border: solid 2px;
+            font-size: 40px;
+            border: none 0px;
+            margin-left: -4px;
+            box-sizing: border-box;
+            width: 24.5%;
+            padding: 10px;
+            display: inline-block;
+            background-color: rgb(160, 160, 160);
         }
         #box3{
-            border: solid 2px;
+            font-size: 40px;
+            border: none 0px;
+            box-sizing: border-box;
+            width: 24.5%;
+            padding: 10px;
+            margin-left: -4px;
+            display: inline-block;
+            background-color: lightgray;
         }
-        #box{
-            border: solid 2px;
+        #box4{
+            font-size: 40px;
+            border: solid 0px;
+            box-sizing: border-box;
+            width: 24.5%;
+            padding: 10px;
+            margin-left: -4px;
+            display: inline-block;
+            background-color: rgb(241, 241, 241);
+        }
+        @media screen and (max-width:600px ) {
+            #box1{
+                width: 100%;
+                display: block;
+            }    
+            #box2{
+                width: 100%;
+                display: block;
+            }      
+            #box3{
+                width: 100%;
+                display: block;
+            }      
+            #box4{
+                width: 100%;
+                display: block;
+            }              
+        }
+        @media screen and (min-width:601px)  and (max-width:1200px){
+            #box1{
+                width: 49%;
+                display: inline-block;
+            }    
+            #box2{
+                width: 49%;
+                display: inline-block;
+            }      
+            #box3{
+                width: 49%;
+                display: inline-block;
+            }      
+            #box4{
+                width: 49%;
+                display: inline-block;
+            }
+        }
+        h1{
+            text-align: center;
+            color: green;
+            font-size: 50px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <h1>Media Query for Column-Increase or Decrease the Screen to See the Change</h1>
     <div id="box1">
         <p >Name:</p>
         <p >Arnav Jagtap</p>
