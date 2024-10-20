@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacking terminal with javascript</title>
+    <style>
+      * {
+        background-color: black;
+        color: rgb(23, 200, 23);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="line4"></div>
+    <div class="line5"></div>
+
+    <script>
+      async function promise1() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.querySelector(".line1").innerHTML =
+              "Initializing Hacking...";
+            resolve();
+          }, 3000);
+        });
+      }
+
+      async function promise2() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.querySelector(".line2").innerHTML ="Reading your files...";
+            resolve();
+          }, 4000);
+        });
+      }
+
+      async function promise3() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.querySelector(".line3").innerHTML ="Password files Detected...";
+            resolve();
+          }, 1000);
+        });
+      }
+
+      async function promise4() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.querySelector(".line4").innerHTML =
+            "Sending all passwards and personal files to server...";
+            resolve();
+          }, 5000);
+        });
+      }
+      
+      async function promise5() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.querySelector(".line5").innerHTML = "Cleaning up...";
+            resolve();
+          }, 6000);
+        });
+      }
+
+      async function main() {
+        
+        await promise1()
+        let p = setInterval(() => {
+            let last = document.body.querySelector(".line1");
+            last.innerHTML = last.innerHTML + ".";
+        }, 100);
+
+        await promise2()
+        clearInterval(p)
+        let q= setInterval(() => {
+            let last = document.body.querySelector(".line2");
+            last.innerHTML = last.innerHTML + ".";
+        }, 100);
+
+        await promise3()
+        clearInterval(q)
+        let r= setInterval(() => {
+            let last = document.body.querySelector(".line3");
+            last.innerHTML = last.innerHTML + ".";
+        }, 100);
+
+        await promise4()
+        clearInterval(r)
+        let s= setInterval(() => {
+            let last = document.body.querySelector(".line4");
+            last.innerHTML = last.innerHTML + ".";
+        }, 100);
+
+        await promise5()
+        clearInterval(s)
+        let t= setInterval(() => {
+            let last = document.body.querySelector(".line5");
+            last.innerHTML = last.innerHTML + ".";
+        }, 400);
+        
+      }
+      main()
+        
+    </script>
+  </body>
+</html>
